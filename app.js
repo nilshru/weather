@@ -45,6 +45,7 @@ const getWeather = async (e) => {
     const mainTempKelvinHour4 = dataHour.list[4].main.temp;
     const mainTempKelvinHour5 = dataHour.list[5].main.temp;
     const mainTempKelvinHour6 = dataHour.list[6].main.temp;
+    const mainTempKelvinHour7 = dataHour.list[7].main.temp;
     const mainTempKelvin = data.main.temp;
     const minTempKelvin = data.main.temp_min;
     const maxTempKelvin = data.main.temp_max;
@@ -57,6 +58,7 @@ const getWeather = async (e) => {
     const mainTempCelsius6 = Math.round(mainTempKelvinHour4 - 273.15);
     const mainTempCelsius7 = Math.round(mainTempKelvinHour5 - 273.15);
     const mainTempCelsius8 = Math.round(mainTempKelvinHour6 - 273.15);
+    const mainTempCelsius9 = Math.round(mainTempKelvinHour7 - 273.15);
     const mainTempCelsius = Math.round(mainTempKelvin - 273.15);
     const minTempCelsius = Math.round(minTempKelvin - 273.15);
     const maxTempCelsius = Math.round(maxTempKelvin - 273.15);
@@ -69,6 +71,7 @@ const getWeather = async (e) => {
     hourTemp[4].innerHTML = mainTempCelsius6 + "&deg";
     hourTemp[5].innerHTML = mainTempCelsius7 + "&deg";
     hourTemp[6].innerHTML = mainTempCelsius8 + "&deg";
+    hourTemp[7].innerHTML = mainTempCelsius9 + "&deg";
 
     hourTime[0].innerHTML = formatTime(dataHour.list[0].dt_txt);
     hourTime[1].innerHTML = formatTime(dataHour.list[1].dt_txt);
@@ -77,6 +80,7 @@ const getWeather = async (e) => {
     hourTime[4].innerHTML = formatTime(dataHour.list[4].dt_txt);
     hourTime[5].innerHTML = formatTime(dataHour.list[5].dt_txt);
     hourTime[6].innerHTML = formatTime(dataHour.list[6].dt_txt);
+    hourTime[7].innerHTML = formatTime(dataHour.list[7].dt_txt);
 
     tempFeel.innerHTML = "Feels-Like " + feelsLikeCelsius + "°C";
     sta.innerHTML = "Status - " + data.weather[0].main;
