@@ -99,7 +99,7 @@ background-color: rgb(156, 233, 214);
     .card-text{
         padding-left: 5px;
         padding-right: 5px;
-        font-size: 1rem;
+        font-size: 0.96rem;
     }
    
     .card-group>.card {
@@ -123,3 +123,25 @@ background-color: rgb(156, 233, 214);
     }
 
 }
+
+@media (max-width: 421px){
+.card-text{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.95rem;
+}
+}
+@media (max-width: 375px){
+    .card-text{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.75rem;
+    }
+    }
+    @media (max-width: 320px){
+        .card-text{
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 0.63rem;
+        }
+        }
