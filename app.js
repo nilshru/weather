@@ -53,7 +53,7 @@ const getWeather = async (e) => {
       element.innerHTML = formatTime(horTime[index]);
     });
 
-    let temprat = dataHo.hourly.temperature_2;
+    let temprat = dataHo.hourly.temperature_2m;
     hourTemp.forEach((element, index) => {
       element.innerHTML = temprat[index] + "&deg;";
     });
