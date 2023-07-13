@@ -55,7 +55,7 @@ const getWeather = async (e) => {
 
     let temprat = dataHo.hourly.temperature_2;
     hourTemp.forEach((element, index) => {
-      element.innerHTML = temprat[index]+2 + "&deg;";
+      element.innerHTML = temprat[index] + "&deg;";
     });
 
     precipate.forEach((element, index) => {
@@ -86,7 +86,7 @@ const getWeather = async (e) => {
     const currentTemperature = dataHo.hourly.temperature_2m[currentHourIndex];
 
     // Display the current temperature
-    temp.innerHTML =   "Temperature " + currentTemperature+2 + "&deg;" + "C";
+    temp.innerHTML =   "Temperature " + currentTemperature + "&deg;" + "C";
 
     
     // Scroll the card group to the current time with an additional 250px
