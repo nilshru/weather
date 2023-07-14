@@ -1,268 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" />
+  <script src="https://kit.fontawesome.com/6e5d6af439.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
   </style>
 </head>
+
 <body>
-    
-    <div class="container">
-        <div class="box">
-            <nav class=" secondary">
-                <a class="textct">Weather</a>
-                <div class="container-fluid">
-                  <form class="d-flex" role="search">
-                    <input class="form-control" value="Patna" type="search" placeholder="Search" aria-label="Search">
-                    <div class="space"></div>
-                    <button class="btn_success" >Search</button>
-                  </form>
-                </div>
-              </nav>
-              
 
-            <div class="status">loding...</div>
-            <div class="temp">loding...</div>
-            <div class="tempFeel ">loding...</div>
-            <div class="location">loding...</div>
-            <!-- <div class="precipetate"></div> -->
-            <div class="card-gr">
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              <div class=" card3">
-                <div class="card-body">
-                  <div class="card-text">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-              
-              <div class="card2">
-                <div class="card-body">
-                  <div class="card-text ">loding...</div>
-                  <div class="precipetate"></div>
-                  <!-- <img src="" alt="im"> -->
-                  <h5 class="card-title">...</h5>
-                </div>
-              </div>
-            
-            </div>
-            <div class="table-responsive TCT">
-                <table class="table mb-4">
-                  <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col">
-                      </th>
-                     
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th class="text-nowrap" scope="row">Max-Temp</th>
-                      <td class="max">loding...</td>
-                      
-                    </tr>
-                    <tr>
-                      <th class="text-nowrap" scope="row">Min-Temp</th>
-                      <td class="min">loding...</td>
-                      
-                    </tr>
-                    <tr>
-                      <th class="text-nowrap" scope="row">Pressure</th>
-                      <td colspan="6" class="press">loding...</td>
-                    </tr>
-                    <tr>
-                      <th class="text-nowrap" scope="row">Humidity</th>
-                      <td colspan="6" class="humid">loding...</td>
-                    </tr>
-                  
-                  </tbody>
-                </table>
-              </div>
+  <div class="container">
+    <div class="box">
+      <nav class=" secondary">
+        <a class="textct">Weather </a>
+        <div class="container-fluid">
+          <form class="d-flex search-container" role="search">
+            <input id="search-input" class="form-control" value="Patna" type="search" placeholder="Type-City-Name"
+              aria-label="Search">
+            <ul id="suggestions-list"></ul>
+            <!-- <div class="space"></div> -->
+            <button class="btn_success">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="location">loding...</div>
+      <div class="main">
+        <div class="temp">loding...</div>
+        <div class="status">...</div>
+      </div>
+      <!-- <div class="toDayPrecipitate"></div> -->
+      <div class="tempFeel ">loding...</div>
+      <i class="fa-solid fa-droplet toDayPrecipitate"><div class="toDayPrecipitate"></div></i>
+ 
+      <div class="card-gr">
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+        <div class=" card3">
+          <div class="card-body">
+            <div class="card-text">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="card-body">
+            <div class="card-text ">loding...</div>
+            <div class="precipetate"></div>
+            <!-- <img src="" alt="im"> -->
+            <h5 class="card-title">...</h5>
+          </div>
+        </div>
+
+      </div>
+      <!-- 7days-------------------------------------- -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">&degC</th>
+            <th scope="col">&#9728</th>
+            <th scope="col"><i class="fa-solid fa-droplet"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="Cdate">1</th>
+            <td class="degDay">Mark</td>
+            <td class="statusWeather">Otto</td>
+            <td  class="rain">@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row" class="Cdate">2</th>
+            <td class="degDay">Jacob</td>
+            <td class="statusWeather">Thornton</td>
+            <td class="rain">@fat</td>
+          </tr>
+          <tr>
+            <th scope="row" class="Cdate">2</th>
+            <td class="degDay">Jacob</td>
+            <td class="statusWeather">Thornton</td>
+            <td class="rain">@fat</td>
+          </tr>
+          <tr>
+            <th scope="row" class="Cdate">2</th>
+            <td class="degDay">Jacob</td>
+            <td class="statusWeather">Thornton</td>
+            <td class="rain">@fat</td>
+          </tr>
+          <tr>
+            <th scope="row" class="Cdate">2</th>
+            <td class="degDay">Jacob</td>
+            <td class="statusWeather">Thornton</td>
+            <td class="rain">@fat</td>
+          </tr>
+          <tr>
+            <th scope="row" class="Cdate">2</th>
+            <td class="degDay">Jacob</td>
+            <td class="statusWeather">Thornton</td>
+            <td class="rain">@fat</td>
+          </tr>
         
-    </div>
-<script src="app.js"></script>
+  
+        </tbody>
+      </table>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   <!-- details-------------------------------------------------- -->
+      <div class="table-responsive TCT">
+        <table class="table mb-4">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">
+              </th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="text-nowrap textDef" scope="row">Max-Temp</th>
+              <td class="max textDef">loding...</td>
+
+            </tr>
+            <tr>
+              <th class="text-nowrap textDef" scope="row">Min-Temp</th>
+              <td class="min textDef">loding...</td>
+
+            </tr>
+            <tr>
+              <th class="text-nowrap textDef" scope="row">Pressure</th>
+              <td colspan="6" class="press textDef">loding...</td>
+            </tr>
+            <tr>
+              <th class="text-nowrap textDef" scope="row">Humidity</th>
+              <td colspan="6" class="humid textDef">loding...</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
