@@ -182,13 +182,15 @@ const getWeatherIcon = (weatherCondition) => {
   } else if (weatherCondition === 'Clouds') {
     return '&#9729;'; // Cloud icon
   } else if (weatherCondition === 'Rain') {
-    return '&#9730;'; // Rain icon
+    return '&#x2614;'; // Rain icon
   } else if (weatherCondition === 'Snow') {
     return '&#9731;'; // Snowflake icon
   } else if (weatherCondition === 'Haze') {
     return '&#127787;'; // Haze icon
   } else if (weatherCondition === 'Thunderstorm') {
     return '&#9928;'; // Thunderstorm icon
+  } else if (weatherCondition === 'Mist') {
+    return '&#x26C5;'; // Thunderstorm icon
   } else {
     return weatherCondition;
   }

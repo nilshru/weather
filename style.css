@@ -124,6 +124,124 @@
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     --bs-gutter-x: 0;
   }
+  .tab{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    align-items: center;
+    text-align: center;
+  }
+  .FiveDays {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fiveTr{
+  width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table>:not(caption)>*>* {
+  padding: 3px 15px 3px 9px;
+  color: var(--bs-table-color-state,var(--bs-table-color-type,var(--bs-table-color)));
+  background-color: var(--bs-table-bg);
+  border-bottom-width: var(--bs-border-width);
+  box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state,var(--bs-table-bg-type,var(--bs-table-accent-bg)));
+}
+.last{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center;
+  justify-content: left;
+  align-items: center; */
+}
+.wDetails{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 10px;
+  font-family: 'Signika', sans-serif;
+}
+.detailsMain{
+  display: flex;
+  /* width: 300px;
+   */
+   justify-content: center;
+   align-items: center;
+}
+.detailsCard{
+  margin: 0px 10px 0px 10px;
+  width: 150px;
+  
+}
+.last {
+  width: auto;
+}
+
+.wDetails {
+  text-align: center;
+  font-weight: bold;
+}
+
+.detailsMain {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding-bottom: 20px;
+}
+
+.detailsCard {
+  width: 200px;
+  height: max-content;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.705);
+}
+
+.max1 {
+  background-color: #dfdfdf;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.min1 {
+  background-color: #dfdfdf;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.press1 {
+  background-color: #dfdfdf;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.humid1 {
+  background-color: #dfdfdf;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+.max {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.min {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.press {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.humid {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
   /* .card-gr::-webkit-scrollbar {
     display: none; 
   }
