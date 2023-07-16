@@ -73,7 +73,7 @@ const getWeather = async () => {
 
     let temprat = dataHo.hourly.temperature_2m;
     hourTemp.forEach((element, index) => {
-      element.innerHTML = temprat[index]+1 + '&deg;';
+      element.innerHTML = Math.floor(temprat[index]+1) + '&deg;';
     });
 
     precipate.forEach((element, index) => {
@@ -88,7 +88,7 @@ const getWeather = async () => {
       element.innerHTML = meteoSevenDays[index];
     });
     let sevenDaysPrecipatate = meteoData.daily.precipitation_probability_max;
-    toDayPrecipitate.innerHTML = sevenDaysPrecipatate[0] +"%" ///today
+    toDayPrecipitate.innerHTML = " " + sevenDaysPrecipatate[0] +"%" ///today
     rain.forEach((element, index)=>{
       element.innerHTML = sevenDaysPrecipatate[index] + "%";
     })
@@ -120,7 +120,7 @@ const getWeather = async () => {
     }
   })
   degDay.forEach((element, index)=>{
-    element.innerHTML = Math.round(forecastData[index].temperature-273.15) + "&degC";
+    element.innerHTML = Math.round(forecastData[index].temperature-273.15) ;
   })
   statusWeather.forEach((element, index)=>{
     element.innerHTML = forecastData[index].weather ;
@@ -137,7 +137,7 @@ const getWeather = async () => {
     const maxTempCelsius = Math.round(maxTempKelvin - 273.15);
     const feelsLikeCelsius = Math.round(feelsLikeKelvin - 273.15)+1;
 
-    tempFeel.innerHTML = 'Feels ' + feelsLikeCelsius + '°C';
+    tempFeel.innerHTML = 'Feels ' + feelsLikeCelsius + '<sup class="supli2">°C</sup>';
     min.innerHTML = minTempCelsius + '°C';
     max.innerHTML = maxTempCelsius+2 + '°C';
     press.innerHTML = data.main.pressure + ' hPa';
@@ -155,7 +155,7 @@ const getWeather = async () => {
     const currentTemperature = dataHo.hourly.temperature_2m[currentHourIndex];
 
     // Display the current temperature
-    temp.innerHTML =currentTemperature+1 + '&deg;' + 'C';
+    temp.innerHTML =Math.floor(currentTemperature)+1 +'<sup class="supli">&degC</sup>' ;
 
     // Scroll the card group to the current time with an additional 250px
     const cardGroup = document.querySelector('.card-gr');
@@ -321,5 +321,5 @@ btn.addEventListener('click', () => {
  
 });
 
-requestLocationPermission();
+// requestLocationPermission();
 getWeather();
