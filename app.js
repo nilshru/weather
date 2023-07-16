@@ -190,7 +190,7 @@ const getWeatherIcon = (weatherCondition) => {
   } else if (weatherCondition === 'Thunderstorm') {
     return '&#9928;'; // Thunderstorm icon
   } else if (weatherCondition === 'Mist') {
-    return '&#x26C5;'; // Thunderstorm icon
+    return '<i class="fa-solid fa-water"></i>'; // mist
   } else {
     return weatherCondition;
   }
