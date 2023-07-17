@@ -83,10 +83,11 @@ const getWeather = async () => {
     let meteoResponce = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${coordLat}&longitude=${coordLon}&daily=precipitation_probability_max&timezone=GMT`)
     let meteoData = await meteoResponce.json();
     let meteoSevenDays = meteoData.daily.time;
-    // console.log(meteoSevenDays);
-    Cdate.forEach((element, index)=>{
-      element.innerHTML = meteoSevenDays[index];
-    });
+Cdate.forEach((element, index) => {
+  const [year, month, day] = meteoSevenDays[index].split('-');
+  const formattedDate = `${month}/${day}`;
+  element.innerHTML = formattedDate;
+});
     let sevenDaysPrecipatate = meteoData.daily.precipitation_probability_max;
     toDayPrecipitate.innerHTML = " " + sevenDaysPrecipatate[0] +"%" ///today
     rain.forEach((element, index)=>{
@@ -130,7 +131,7 @@ const getWeather = async () => {
     statusWeather[index].innerHTML = weatherIcon2;
   })
   // console.log(forecastData[0].temperature);
-  console.log(forecastData[0].weather);
+  // console.log(forecastData[0].weather);
    /////////////////////////////////////////////////////////
     const mainTempCelsius = Math.round(mainTempKelvin - 273.15);
     const minTempCelsius = Math.round(minTempKelvin - 273.15);
@@ -198,23 +199,23 @@ const getWeatherIcon = (weatherCondition) => {
 
 
 const clearWeatherData = () => {
-  locatCity.innerHTML = '';
-  sta.innerHTML = '';
-  temp.innerHTML = '';
-  tempFeel.innerHTML = '';
-  min.innerHTML = '';
-  max.innerHTML = '';
-  press.innerHTML = '';
-  humid.innerHTML = '';
-  hourTemp.forEach((element) => {
-    element.innerHTML = '';
-  });
-  hourTime.forEach((element) => {
-    element.innerHTML = '';
-  });
-  precipate.forEach((element) => {
-    element.innerHTML = '';
-  });
+  // locatCity.innerHTML = '';
+  // sta.innerHTML = '';
+  // temp.innerHTML = '';
+  // tempFeel.innerHTML = '';
+  // min.innerHTML = '';
+  // max.innerHTML = '';
+  // press.innerHTML = '';
+  // humid.innerHTML = '';
+  // hourTemp.forEach((element) => {
+  //   element.innerHTML = '';
+  // });
+  // hourTime.forEach((element) => {
+  //   element.innerHTML = '';
+  // });
+  // precipate.forEach((element) => {
+  //   element.innerHTML = '';
+  // });
 };
 
 const getCurrentPosition = () => {
@@ -321,5 +322,5 @@ btn.addEventListener('click', () => {
  
 });
 
-// requestLocationPermission();
+requestLocationPermission();
 getWeather();

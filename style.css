@@ -189,6 +189,7 @@
   align-items: center; */
 }
 .wDetails {
+  margin-top: 15px;
   margin-bottom: 15px;
   display: flex;
   font-size: 1.5rem;
@@ -367,10 +368,18 @@ tbody, td, tfoot, th, thead, tr {
   } 
   
   #search-input {
+    border-radius: 30px ;
     width: 100%;
     padding: 10px;
     font-size: 16px;
   }
+  hr {
+    margin:0 ;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+}
   
   #suggestions-list {
     position: absolute;
@@ -382,9 +391,11 @@ tbody, td, tfoot, th, thead, tr {
     margin: 0;
     list-style: none;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-top: none;
     overflow-y: auto;
+    color: black;
+    border-radius: 20px;
   }
   
   #suggestions-list li {
